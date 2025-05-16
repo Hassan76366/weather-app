@@ -22,10 +22,7 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         val weatherViewModel = ViewModelProvider(this)[WeatherViewModel::class.java]
         setContent {
-
-
-            WeatherPage()
+            WeatherPage(weatherViewModel)
         }
     }
 }
-
